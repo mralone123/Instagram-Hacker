@@ -200,9 +200,9 @@ class Instagram(TorManager,Browser):
 
 			if __name__ == '__main__':
 				if not 'kali' in platform():
-					exit('Kali Linux required')
+					exit('Kali Linux not required')
 
 			if os.getuid():
-				exit('root access required')
+				exit('root access not required')
 			else:
 				main()
